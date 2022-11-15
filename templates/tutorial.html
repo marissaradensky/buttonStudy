@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Radio Button</title>
+    <!-- <script type='text/javascript' src='jquery-3.6.1.min.js'></script> -->
+</head>
+<body>
+    <p><b>PRACTICE QUESTION</b></p>
+
+    <p>The AI predicts that you should select <b>Button A</b>.</p>
+
+    <p>Confidence:</p>
+    <img src="tutorial.png" width="200" alt="pie chart confidence display">
+
+    <p>Please decide whether to pass or to agree with the AI’s prediction.</p>
+    <div>
+        <input type="radio" name="option" value="agree" id="agree">
+        <label for="agree">Agree with AI (8 points if right; 0 points if wrong)</label>
+    </div>
+    <div>
+        <input type="radio" name="option" value="pass" id="pass">
+        <label for="pass">Pass (5 points)</label>
+    </div>
+    <!-- <p>
+        <button id="btn">Show Selected Value</button>
+    </p>
+
+    <p id="output"></p> -->
+    <br>
+    <div>
+        <input type="button" onclick="window.location.href='../q1';" name="option" value="Next" id="next">
+    </div>
+
+    <!-- <button id="button1" type="button">Write to File</button> -->
+
+    <!-- <div>
+        <input type="button" id="bt" value="Save data to file" onclick="saveFile()" />
+    </div> -->
+
+</body>
+<script type='text/javascript'>
+    // $('#button1').click(function(){
+    //  $.ajax({
+    //  type: "POST",
+    //  url: "abc.php",
+    //  data: "",
+    //  success: function(msg){
+    //      alert(msg);
+    //  },
+    //  error: function(XMLHttpRequest, textStatus, errorThrown) {
+    //     alert("Some error occured");
+    //  }
+    //  });
+    // });
+    // let saveFile = () => {
+    //
+    //     // Get the data from each element on the form.
+    //     const radioButtons = document.querySelectorAll('input[name="option"]');
+    //     let selectedOption;
+    //     for (const radioButton of radioButtons) {
+    //         if (radioButton.checked) {
+    //             selectedOption = radioButton.value;
+    //             break;
+    //       }
+    //     }
+    //
+    //     // This variable stores all the data.
+    //     let data = selectedOption;
+    //
+    //     // Convert the text to BLOB.
+    //     const textToBLOB = new Blob([data], { type: 'text/plain' });
+    //     const sFileName = 'formData.txt';	   // The file to save the data.
+    //
+    //     let newLink = document.createElement("a");
+    //     newLink.download = sFileName;
+    //
+    //     if (window.webkitURL != null) {
+    //         newLink.href = window.webkitURL.createObjectURL(textToBLOB);
+    //     }
+    //     else {
+    //         newLink.href = window.URL.createObjectURL(textToBLOB);
+    //         newLink.style.display = "none";
+    //         document.body.appendChild(newLink);
+    //     }
+    //
+    //     newLink.click();
+    // }
+    // const btn = document.querySelector('#btn');
+    // const radioButtons = document.querySelectorAll('input[name="option"]');
+    // btn.addEventListener("click", () => {
+    //     let selectedOption;
+    //     for (const radioButton of radioButtons) {
+    //         if (radioButton.checked) {
+    //             selectedOption = radioButton.value;
+    //             break;
+    //         }
+    //     }
+    //     // show the output:
+    //     output.innerText = selectedOption ? `You selected ${selectedOption}` : `You haven't selected any option`;
+    // });
+</script>
+</html>
