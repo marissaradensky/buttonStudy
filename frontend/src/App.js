@@ -61,7 +61,7 @@ function App() {
   }
 
   const saveInput = (type,message,datetime) => {
-    fetch('/study1-api/flask/hello', {
+    fetch('http://localhost:3100/flask/hello', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -79,7 +79,7 @@ function App() {
   }
 
   useEffect(()=>{
-    axios.get('/study1-api/flask/hello').then(response => {
+    axios.get('http://localhost:3100/flask/hello').then(response => {
       console.log("SUCCESS", response)
       setGetMessage(response)
       setPid(parseInt(response["data"]["pid"])+1)
